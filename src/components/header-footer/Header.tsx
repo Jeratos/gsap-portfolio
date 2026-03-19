@@ -11,13 +11,13 @@ export default function Header() {
   const [hoveredLink2, setHoveredLink2] = useState<boolean>(false);
   const [hoveredLink3, setHoveredLink3] = useState<boolean>(false);
   const navigate = useNavigate();
-  const container = useRef(null);
+  const container = useRef<HTMLDivElement>(null);
 
   
   useGSAP(()=>{
       if(open){
 
-        gsap.from(container.current?.querySelectorAll(".link"),{  
+        gsap.from(container.current!.querySelectorAll(".link"),{  
           rotateX:-90,
           opacity:0,
           duration:.5,
