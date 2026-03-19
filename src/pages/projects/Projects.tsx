@@ -3,9 +3,16 @@ import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 
+interface projectImage{
+  image1:string,
+  image1Title:string,
+  image2:string,
+  image2Title:string
+}
+
 export default function Projects() {
 
-const projectImage:object[] = [{
+const projectImage:projectImage[] = [{
   image1:'/image/saas.png',
   image1Title:'saas-product',
   image2:'/image/e-com.png',
