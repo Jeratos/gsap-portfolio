@@ -1,4 +1,3 @@
-import React from 'react'
 import ProjectCard from '../../components/projects/project-card'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
