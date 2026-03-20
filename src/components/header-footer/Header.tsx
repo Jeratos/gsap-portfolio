@@ -38,7 +38,7 @@ export default function Header() {
             className="hover:text-green-300 cursor-pointer transition-all duration-300 text-2xl font-semibold ml-10"
             onClick={() => navigate("/")}
           >
-            logo
+            Ayush S. Chouhan
           </h1>
 
           <div
